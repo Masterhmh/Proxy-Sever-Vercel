@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.all('/proxy', async (req, res) => {
-  const gasUrl = 'https://script.google.com/macros/s/YOUR_WEB_APP_ID/exec';
+  const gasUrl = 'https://script.google.com/macros/s/AKfycbzQQFzbEpmIHRNyYTG6trUOvZx4fE6FX886aOGPXyID_wIuP3x0FWdRZf4Q4yrVW75bow/exec';
   const response = await fetch(gasUrl, {
     method: req.method,
     headers: { 'Content-Type': 'application/json' },
